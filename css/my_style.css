@@ -1,0 +1,276 @@
+body{
+    background-color: #f1f1f1
+}
+.form_wizard{
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+.form_wizard > div[class*=col-]{
+    padding: 0px;
+    box-shadow: 0 0 10px #9e9e9e;
+    background-color: white;
+    border-radius: 15px;
+}
+.form_wizard header{
+    height: 150px;
+    background-color: #f1f1f1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.form_wizard header > div{
+    position: relative
+}
+.form_wizard header .header_liste_view{
+    position: relative;
+    background-color: #f1f1f1;
+    height: 240px;
+}
+.form_wizard header .logo{
+    display: block;
+    margin: auto;
+    width: 330px;
+    height: 130px;
+    margin-top: 15px;
+}
+.form_wizard header .steps_list_view{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 400;
+}
+.form_wizard header .progress{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #cccccc;
+    z-index: 300;
+    top: 29px;
+}
+.form_wizard header .progress .progress-bar{
+    background-color: #9b5c8f;
+}
+.form_wizard header .steps_list_view .item{
+    text-align: center
+}
+.form_wizard header .steps_list_view .item .label{
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form_wizard header .steps_list_view .item .icon{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 3px transparent solid;
+    margin: auto
+}
+.form_wizard header .steps_list_view .active .icon{
+    background-color: #9b5c8f;
+}
+.form_wizard header .steps_list_view .loading .icon{
+    background-color: white;
+    border-color: #9b5c8f
+}
+.form_wizard header .steps_list_view .disable .icon{
+    background-color: white;
+    border-color: #cccccc
+}
+.form_wizard header .steps_list_view .active .label{
+    color: #9b5c8f;
+}
+.form_wizard header .steps_list_view .loading .label{
+    color: #9b5c8f
+}
+.form_wizard header .steps_list_view .disable .label{
+    color: #cccccc
+}
+.form_wizard section{
+    margin-top: 60px;
+}
+.form_wizard section .form_item .form_body{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    
+    box-shadow: 0 4px 70px -2px gray;
+}
+.form_wizard section .form_item .header{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.form_wizard section .form_item_pushare table{
+    width: 100%;
+}
+.form_wizard section .form_item_pushare table thead tr{
+    height: 35px;
+    background-color: #f1f1f1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #9e9e9e
+}
+.form_wizard section .form_item_pushare table td{
+    vertical-align: middle;
+}
+.form_wizard section .form_item_pushare table tbody tr img{
+    width: 85px;
+    height: 100px;
+    display: inline-block
+}
+.form_wizard section .form_item_pushare table tbody tr .item_name{
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form_wizard section .form_item_pushare table tbody tr .action a{
+    color: #bec0c6;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px
+}
+.form_wizard section .form_item_pushare table tbody tr .price{
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form_wizard section .form_item_pushare table tfoot tr td{
+    text-align: right
+}
+.form_wizard section .form_item_pushare table tfoot tr td span{
+    color: #bec0c6;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px
+}
+.form_wizard section .form_item_pushare table tfoot tr td em{
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form_wizard section .form_item_payement_method .status input{
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: skyblue;
+    border: 2px skyblue solid;
+    cursor: pointer;
+    background-color: transparent;
+    height: 40px;
+    width: 100%
+}
+.form_wizard section .form_item_payement_method .label{
+    color: black;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form_wizard section .form_item_payement_method .item{
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+.form_wizard section .form_item_payement_method .item button{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: 3px #f1f1f1 solid
+}
+.form_wizard section .form_item_payement_method .item button:hover{
+    border-color: green;
+}
+.form_wizard section .form_item_payement_method .item button img{
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin: auto
+}
+.form_wizard section .form_item_order_information .item {
+    margin-top: 15px
+}
+.form_wizard section .form_item_order_information .item .icon{
+    width: 25px;
+    height: 25px;
+}
+.form_wizard section .form_item_order_information .item .title{
+    color: #4a4c55;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.form_wizard section .form_item_order_information .item p{
+    color: #9e9e9e;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.form_wizard section .form_item_order_information .label{
+    margin-bottom: 35px;
+    margin-top: 25px
+}
+.form_wizard section .form_item_order_information .label input{
+    height: 45px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    box-shadow: 0 4px 70px -2px blue;
+}
+.form_wizard footer{
+    background-color: white;
+    padding: 25px
+}
+.form_wizard footer button{
+    color: blue;
+    font-weight: bold;
+    font-family: SFUIText, Arial, Helvetica, Helvetica Neue, Tahoma, Roboto, sans-serif;
+    color: blue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom: transparent 2px solid
+}
+.form_wizard footer button:hover{
+    border-bottom-color: blue
+}
+.form_wizard footer .back_btn img{
+    width: 20px;
+    height: 20px;
+    float: left
+}
+.form_wizard footer .next_btn img{
+    width: 20px;
+    height: 20px;
+    float: right
+}
+.form_wizard section .form_submit_item img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+.form_wizard section .form_submit_item input{
+    width: 140px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 25px
+}
